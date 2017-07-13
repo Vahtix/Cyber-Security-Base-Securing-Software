@@ -47,19 +47,17 @@ public class PortScanner {
         
         for(int i = start; i <= end; i++){
         	    
-        	try{
-            
-        	s = new Socket(address, i);
+        	try{           
+        		s = new Socket(address, i);
 
-                System.out.println("Port " + i + " is available");
+                	System.out.println("Port " + i + " is available");
 
-                accessiblePorts.add(s.getPort());
-                s.close();		
+                	accessiblePorts.add(s.getPort());
+                	s.close();		
 
         	}catch(ConnectException e){
-                System.out.println("Port " + i  + " is not available");
-            }
-			
+                	System.out.println("Port " + i  + " is not available");
+            	}			
         } 
         return accessiblePorts;
     }
