@@ -1,0 +1,120 @@
+2016-12-05 15:10:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGETS" not found; SQL statement:
+SELECT * FROM Agets [42102-193]
+2016-12-05 15:10:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGENT" already exists; SQL statement:
+CREATE TABLE Agent (
+    id varchar(9) PRIMARY KEY,
+    name varchar(200)
+) [42101-193]
+2016-12-05 15:10:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGENTS" not found; SQL statement:
+SELECT * FROM Agents [42102-193]
+2016-12-05 15:11:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGENT" already exists; SQL statement:
+CREATE TABLE Agent (
+    id varchar(9) PRIMARY KEY,
+    name varchar(200)
+) [42101-193]
+2016-12-05 15:11:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGENTS" not found; SQL statement:
+SELECT * FROM Agents [42102-193]
+2016-12-05 15:13:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGENT" already exists; SQL statement:
+CREATE TABLE Agent (
+    id varchar(9) PRIMARY KEY,
+    name varchar(200)
+) [42101-193]
+2016-12-05 15:13:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+INSERT INTO Agent (id, name) VALUES ('soosi', 'seppo taalasmaa') [90002-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.Prepared.query(Prepared.java:212)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:110)
+	at org.h2.command.Command.executeQuery(Command.java:201)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:110)
+	at sec.helloinsert.HelloInsert.main(HelloInsert.java:55)
+2016-12-05 15:18:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGENT" already exists; SQL statement:
+CREATE TABLE Agent (
+    id varchar(9) PRIMARY KEY,
+    name varchar(200)
+) [42101-193]
+2016-12-05 15:19:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGENT" already exists; SQL statement:
+CREATE TABLE Agent (
+    id varchar(9) PRIMARY KEY,
+    name varchar(200)
+) [42101-193]
+2016-12-05 15:19:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGENT" already exists; SQL statement:
+CREATE TABLE Agent (
+    id varchar(9) PRIMARY KEY,
+    name varchar(200)
+) [42101-193]
+2016-12-05 15:20:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGENT" already exists; SQL statement:
+CREATE TABLE Agent (
+    id varchar(9) PRIMARY KEY,
+    name varchar(200)
+) [42101-193]
+2016-12-05 15:21:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGENT" already exists; SQL statement:
+CREATE TABLE Agent (
+    id varchar(9) PRIMARY KEY,
+    name varchar(200)
+) [42101-193]
+2016-12-05 15:21:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGENT" already exists; SQL statement:
+CREATE TABLE Agent (
+    id varchar(9) PRIMARY KEY,
+    name varchar(200)
+) [42101-193]
+2016-12-05 15:22:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "AGENT" already exists; SQL statement:
+CREATE TABLE Agent (
+    id varchar(9) PRIMARY KEY,
+    name varchar(200)
+) [42101-193]
+07-13 21:49:04 jdbc[2]: SQLException
+org.h2.jdbc.JdbcSQLException: Table AGENT already exists [42101-73]
+	at org.h2.message.Message.getSQLException(Message.java:103)
+	at org.h2.message.Message.getSQLException(Message.java:114)
+	at org.h2.message.Message.getSQLException(Message.java:77)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:113)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:69)
+	at org.h2.command.Command.executeUpdate(Command.java:198)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:163)
+	at org.h2.tools.RunScript.process(RunScript.java:161)
+	at org.h2.tools.RunScript.execute(RunScript.java:148)
+	at sec.helloinsert.HelloInsert.main(HelloInsert.java:24)
+07-13 21:49:13 jdbc[2]: SQLException
+org.h2.jdbc.JdbcSQLException: Unique index or primary key violation: PRIMARY_KEY_3  ON PUBLIC.AGENT(ID) [23001-73]
+	at org.h2.message.Message.getSQLException(Message.java:103)
+	at org.h2.message.Message.getSQLException(Message.java:114)
+	at org.h2.message.Message.getSQLException(Message.java:77)
+	at org.h2.index.BaseIndex.getDuplicateKeyException(BaseIndex.java:150)
+	at org.h2.index.BtreeLeaf.add(BtreeLeaf.java:67)
+	at org.h2.index.BtreeIndex.add(BtreeIndex.java:196)
+	at org.h2.table.TableData.addRow(TableData.java:98)
+	at org.h2.command.dml.Insert.update(Insert.java:96)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:69)
+	at org.h2.command.Command.executeUpdate(Command.java:198)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:137)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:126)
+	at sec.helloinsert.HelloInsert.main(HelloInsert.java:55)
+07-13 21:49:37 jdbc[2]: SQLException
+org.h2.jdbc.JdbcSQLException: Table AGENT already exists [42101-73]
+	at org.h2.message.Message.getSQLException(Message.java:103)
+	at org.h2.message.Message.getSQLException(Message.java:114)
+	at org.h2.message.Message.getSQLException(Message.java:77)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:113)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:69)
+	at org.h2.command.Command.executeUpdate(Command.java:198)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:163)
+	at org.h2.tools.RunScript.process(RunScript.java:161)
+	at org.h2.tools.RunScript.execute(RunScript.java:148)
+	at sec.helloinsert.HelloInsert.main(HelloInsert.java:24)
