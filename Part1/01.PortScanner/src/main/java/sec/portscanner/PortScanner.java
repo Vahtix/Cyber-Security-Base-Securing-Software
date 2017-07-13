@@ -36,6 +36,8 @@ public class PortScanner {
         reader.close();
     }
 
+    //Write the code needed for the method getAccessiblePorts to scan the given range of ports. 
+    //The method should scan the ports at a given address, and then return the list of ports that have a service listening for them.
     public static Set<Integer> getAccessiblePorts(String address, int start, int end) throws UnknownHostException, IOException {
         Set<Integer> accessiblePorts = new TreeSet<>();
         start = Math.max(start, MIN_PORT);
