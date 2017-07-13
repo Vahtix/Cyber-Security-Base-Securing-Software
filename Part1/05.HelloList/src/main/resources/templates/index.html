@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Hello List!</title>
+    </head>
+
+    <body>
+        <h1>Print</h1>
+
+			<ul>
+				<li th:each="item : ${list}">
+					<span th:text="${item}">hello world!</span>
+				</li>
+			</ul>
+		
+        <h1>Form</h1>
+		
+		<form th:action="@{/}" method="POST">
+			<input type="text" name="content"/>
+			<input type="submit"/>
+		</form>
+		
+    </body>
+</html>
