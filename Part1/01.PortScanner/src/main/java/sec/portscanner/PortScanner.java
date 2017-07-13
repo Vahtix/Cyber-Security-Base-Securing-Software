@@ -49,7 +49,7 @@ public class PortScanner {
         	    
         	try{
             
-        		s = new Socket(address, i);
+        	s = new Socket(address, i);
 
                 System.out.println("Port " + i + " is available");
 
